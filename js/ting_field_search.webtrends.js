@@ -1,9 +1,7 @@
-
 (function($) {
-
+  'use strict';
   Drupal.behaviors.tingFieldSearchWebtrends = {
     attach: function(context, settings) {
-
       // Track when a profile is selected if Webtrends is selected.
       $("#edit-ting-field-search", context).change(function() {
         if (typeof dcsMultiTrack !== "undefined") {
@@ -15,5 +13,4 @@
       });
     }
   };
-
 })(jQuery);

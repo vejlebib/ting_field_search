@@ -1,6 +1,10 @@
 <?php
 
 /**
+ * @file
+ */
+
+/**
  * Extend the ctools export UI class with our own functionality.
  */
 class ting_field_search_ctools_export_ui extends ctools_export_ui {
@@ -85,6 +89,9 @@ class ting_field_search_ctools_export_ui extends ctools_export_ui {
     );
   }
 
+  /**
+   * Build rows.
+   */
   function list_build_row($profile, &$form_state, $operations) {
     parent::list_build_row($profile, $form_state, $operations);
 
@@ -109,12 +116,16 @@ class ting_field_search_ctools_export_ui extends ctools_export_ui {
       case 'weight':
         $this->sorts[$name] = $weight;
         break;
+
       case 'exposed':
         $this->sorts[$name] = $exposed;
         break;
     }
   }
 
+  /**
+   * Build table header.
+   */
   function list_table_header() {
     $header = parent::list_table_header();
 
