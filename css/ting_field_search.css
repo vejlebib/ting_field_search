@@ -1,0 +1,56 @@
+/**
+ * Mixins
+ *
+ * @author magnify
+ */
+/* Breakpoints
+   ========================================================================== */
+/* Media query
+   ========================================================================== */
+/* Breakpoints
+   ========================================================================== */
+/* Typography mixins
+ *
+ * These are mixins to allow for use in media queries
+   ========================================================================== */
+/* Availability
+   ========================================================================== */
+/* Pseudo arrow
+ *
+ * Usage example: pseudo-arrow(10px, #000, top, center, $offset: 20px)
+   ========================================================================== */
+/* Colors variables
+   ========================================================================== */
+/* Widgets
+   ========================================================================== */
+.pane-search-form .search-field-wrapper #search-block-form .form-item-search-block-form {
+  width: 67%;
+}
+.pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search {
+  width: 15%;
+  margin-left: 90px;
+}
+.pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search select#edit-ting-field-search {
+  height: 60px;
+  display: inline;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  padding: 10px;
+  font-size: 100%;
+}
+.pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search:before {
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f0dc";
+  position: relative;
+  top: 40px;
+  float: right;
+  right: 5px;
+}
+.pane-search-form .search-field-wrapper #search-block-form .form-actions {
+  top: 37px;
+}
