@@ -1,0 +1,65 @@
+@import "_mixins";
+@import "susy";
+@import "zen-grids";
+
+/* Colors variables
+   ========================================================================== */
+
+$white:                   #fff;
+$dark-gray:               #ccc;
+$darker-gray:             #333;
+$light-gray:              #dadada;
+$lighter-gray:            #e5e5e5;
+$gray:                    #ccc;
+$black:                   #000;
+$gray-transparent-bg:     rgba( 0, 0, 0, 0.7);
+$red:                     #e10d3f;
+$orange:                  #ea6621;
+$green_light:             #b9c650;
+$blue:                    #008abe;
+$purple:                  #a34da4;
+$marine:                  #47cfd1;
+$yellow:                  #eae328;
+$green:                   #78a854;
+
+$zen-columns:             12;
+$zen-gutters:             20px;
+
+/* Widgets
+   ========================================================================== */
+.pane-search-form .search-field-wrapper #search-block-form {
+  .form-item-search-block-form {
+    width: 67%;
+  }
+
+  .form-item-ting-field-search {
+    width: 15%;
+    margin-left: 90px;
+
+    select#edit-ting-field-search {
+      height: 60px;
+      display: inline;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      padding: 10px;
+      font-size: 100%;
+    }
+
+    &:before {
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\f0dc";
+      position: relative;
+      top: 40px;
+      float: right; 
+      right: 5px;       
+    }
+  }
+  .form-actions {
+    top: 37px;
+  }
+}
