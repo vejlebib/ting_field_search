@@ -7,4 +7,4 @@ files[] = ting_field_search.cache.inc
 stylesheets[all][] = css/ting_field_search.css
 stylesheets[all][] = js/lib/dist/css/select2.min.css
 scripts[] = js/lib/dist/js/select2.min.js
-scripts[] = js/ting_field_search.webtrends.js
+scripts[] = js/ting_field_search.js
