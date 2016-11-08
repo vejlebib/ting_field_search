@@ -1,16 +1,16 @@
 (function($) {
   'use strict';
-  Drupal.behaviors.tingFieldSearchWebtrends = {
-    attach: function(context, settings) {
-      // Track when a profile is selected if Webtrends is selected.
-      $("#edit-ting-field-search", context).change(function() {
-        if (typeof dcsMultiTrack !== "undefined") {
-          var profile_name = $(this).children(":selected").val();
-          var uri = "/ting-field-search/profile-selected/" + profile_name;
 
-          dcsMultiTrack("WT.ti", profile_name, "DCS.uri", uri);
-        }
-      });
-    }
-  };
+  function updateSelect() {
+    $('.form-type-select.form-item-ting-field-search select').select2();
+  }
+
+  function changeSelect() {
+  $('.page-search-ting .form-item-ting-field-search').insertAfter('.form-wrapper.collapse-processed'); 
+  }
+
+  $(document).ready(function() {
+    updateSelect();
+    changeSelect();
+  });
 })(jQuery);
