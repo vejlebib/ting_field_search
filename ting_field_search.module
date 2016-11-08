@@ -562,7 +562,6 @@ function ting_field_search_preprocess_ding_availability_types(&$variables) {
         ting_field_search_append_query($options['query'], $profile);
       }
     }
-
   }
 
   // The online type is a bit tricky, since the link is hardcoded.
@@ -646,7 +645,9 @@ function ting_field_search_form_search_block_form_alter(&$form, &$form_state) {
   if ($profile = ting_field_search_get_active_profile()) {
     $profile = $profile->config['user_interaction']['sticky'] ? $profile->name : '';
   }
+
   $form['ting_field_search'] = array(
+    '#title' => t('Search in:'),
     '#type' => 'select',
     '#options' => $exposed_profiles,
     '#empty_option' => t('Search in standard'),
