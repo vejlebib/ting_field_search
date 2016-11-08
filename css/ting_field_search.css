@@ -30,6 +30,7 @@
   width: 15%;
   margin-left: 90px;
   margin-top: 0;
+  z-index: 9;
 }
 .pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search label {
   position: relative;
@@ -48,45 +49,45 @@
   top: -1px;
 }
 
-.select2.select2-container {
+.select2-container {
   width: 180px !important;
 }
-.select2.select2-container .select2-search--dropdown {
+.select2-container .select2-search--dropdown {
   padding: 0;
 }
-.select2.select2-container .select2-search--dropdown .select2-search__field {
+.select2-container .select2-search--dropdown .select2-search__field {
   display: none;
 }
-.select2.select2-container .select2-dropdown .select2-results {
+.select2-container .select2-dropdown .select2-results {
   border-radius: 15px;
 }
-.select2.select2-container .select2-dropdown .select2-results__option {
+.select2-container .select2-dropdown .select2-results__option {
   height: 50px;
   line-height: 50px;
   font-weight: bold;
   padding: 0 6px;
   color: #008abe;
 }
-.select2.select2-container .selection .select2-selection--single {
+.select2-container .selection .select2-selection--single {
   height: 60px;
   border-radius: 12px;
   background: #f7f7f7;
   border: 1px solid #d5d5d5;
 }
-.select2.select2-container .selection .select2-selection--single .select2-selection__rendered {
+.select2-container .selection .select2-selection--single .select2-selection__rendered {
   margin-top: 15px;
   margin-left: 5px;
 }
-.select2.select2-container .selection .select2-selection--single .select2-selection__arrow {
+.select2-container .selection .select2-selection--single .select2-selection__arrow {
   top: 0;
   height: 50px;
   width: 30px;
   right: 0;
 }
-.select2.select2-container .selection .select2-selection--single .select2-selection__arrow b {
+.select2-container .selection .select2-selection--single .select2-selection__arrow b {
   border: none;
 }
-.select2.select2-container .selection .select2-selection--single .select2-selection__arrow b:before {
+.select2-container .selection .select2-selection--single .select2-selection__arrow b:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
