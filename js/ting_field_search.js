@@ -6,7 +6,7 @@
   }
 
   function changeSelect() {
-  $('.page-search-ting .form-item-ting-field-search').insertAfter('.form-wrapper.collapse-processed'); 
+    $('.page-search-ting .form-item-ting-field-search').insertAfter('.form-wrapper.collapse-processed'); 
   }
 
   $(document).ready(function() {

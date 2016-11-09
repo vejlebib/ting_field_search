@@ -41,9 +41,8 @@ $zen-gutters:             20px;
 
     label {
       position: relative;
-      top: 43px;
+      top: 45px;
       margin-left: -80px;
-      font: normal normal normal 18px/1 FontAwesome;
       font-family: "SourceSansProSemibold";
     }
   }
@@ -65,7 +64,7 @@ $zen-gutters:             20px;
   width: 180px !important;
 
   .select2-search--dropdown {
-    padding:0;
+    padding: 0;
 
     .select2-search__field {
       display: none;
@@ -135,9 +134,8 @@ $zen-gutters:             20px;
 
     label {
       position: relative;
-      top: 43px;
+      top: 45px;
       margin-left: -80px;
-      font: normal normal normal 18px/1 FontAwesome;
       font-family: "SourceSansProSemibold";
       color: #4f4f4f;
     }
@@ -165,7 +163,6 @@ $zen-gutters:             20px;
       label {
         top: 5px;
         left: 80px;
-        font: normal normal normal 18px/1 FontAwesome;
         font-family: "SourceSansProSemibold";
       }
     }
@@ -250,7 +247,6 @@ $zen-gutters:             20px;
       label {
         top: 5px;
         left: 80px;
-        font: normal normal normal 18px/1 FontAwesome;
         font-family: "SourceSansProSemibold";
         padding: 10px 0;
         color: #4f4f4f;
