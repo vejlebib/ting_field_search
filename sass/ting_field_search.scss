@@ -43,7 +43,7 @@ $zen-gutters:             20px;
       position: relative;
       top: 45px;
       margin-left: -80px;
-      font-family: "SourceSansProSemibold";
+      font: normal normal normal 18px/1 "SourceSansProSemibold";
     }
   }
 
@@ -136,7 +136,7 @@ $zen-gutters:             20px;
       position: relative;
       top: 45px;
       margin-left: -80px;
-      font-family: "SourceSansProSemibold";
+      font: normal normal normal 18px/1 "SourceSansProSemibold";
       color: #4f4f4f;
     }
   }
@@ -163,7 +163,7 @@ $zen-gutters:             20px;
       label {
         top: 5px;
         left: 80px;
-        font-family: "SourceSansProSemibold";
+        font: normal normal normal 18px/1 "SourceSansProSemibold";
       }
     }
 
@@ -247,7 +247,7 @@ $zen-gutters:             20px;
       label {
         top: 5px;
         left: 80px;
-        font-family: "SourceSansProSemibold";
+        font: normal normal normal 18px/1 "SourceSansProSemibold";
         padding: 10px 0;
         color: #4f4f4f;
       }
