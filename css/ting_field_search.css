@@ -34,9 +34,8 @@
 }
 .pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search label {
   position: relative;
-  top: 43px;
+  top: 45px;
   margin-left: -80px;
-  font: normal normal normal 18px/1 FontAwesome;
   font-family: "SourceSansProSemibold";
 }
 .pane-search-form .search-field-wrapper #search-block-form .form-actions {
@@ -110,9 +109,8 @@
 }
 .page-search-ting #search-block-form .form-item-ting-field-search label {
   position: relative;
-  top: 43px;
+  top: 45px;
   margin-left: -80px;
-  font: normal normal normal 18px/1 FontAwesome;
   font-family: "SourceSansProSemibold";
   color: #4f4f4f;
 }
@@ -134,7 +132,6 @@
   .pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search label {
     top: 5px;
     left: 80px;
-    font: normal normal normal 18px/1 FontAwesome;
     font-family: "SourceSansProSemibold";
   }
   .pane-search-form .search-field-wrapper #search-block-form .form-actions {
@@ -202,7 +199,6 @@
   .page-search-ting #search-block-form .form-item-ting-field-search label {
     top: 5px;
     left: 80px;
-    font: normal normal normal 18px/1 FontAwesome;
     font-family: "SourceSansProSemibold";
     padding: 10px 0;
     color: #4f4f4f;
