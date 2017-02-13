@@ -624,9 +624,15 @@ function ting_field_search_form_search_block_form_alter(&$form, &$form_state) {
 
   $exposed_profiles = array();
   $profiles = ting_field_search_profiles_load_all();
+
+  // Don't render select if there's no profiles in the system.
+  if (empty($profiles)) {
+    return;
+  }
+
   foreach (ting_field_search_profiles_sort($profiles) as $name => $profile) {
     // Only exposed profiles will be shown to the user.
-    if ($profile->config['user_interaction']['exposed']) {
+    if ($profile->config['user_interaction']['exposed'] && $profile->disabled == FALSE) {
       $exposed_profiles[$name] = t(
         'Search in @profile',
         array(
@@ -636,8 +642,8 @@ function ting_field_search_form_search_block_form_alter(&$form, &$form_state) {
     }
   }
 
-  // Don't render select if there's no profiles in the system.
-  if (empty($profiles)) {
+  // Don't render select if no exposed profiles available.
+  if (empty($exposed_profiles)) {
     return;
   }
 
