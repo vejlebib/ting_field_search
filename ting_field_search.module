@@ -680,6 +680,10 @@ function ting_field_search_form_search_block_form_alter(&$form, &$form_state) {
     'data' => $path . '/css/ting_field_search.base.css',
     'every_page' => TRUE,
   );
+  $form['#attached']['css'][] = array(
+    'data' => $path . '/css/ting_field_search.css',
+    'every_page' => TRUE,
+  );
 
   // This is a convenient place to add the Webtrends Javascript tracking for
   // now. May have to be moved to a more general place.
