@@ -2,12 +2,12 @@
 
 /**
  * @file
+ * Cache backend for ting_field_search.
  *
  * Contains the definitions of the module's cache backends that is used on the
  * cache_ting bin, to overcome the limitations of hook_ting_pre_execute caused
  * by Ting client's timing of setting the cache.
  */
-
 
 class TingFieldSearchDatabaseCache extends DrupalDatabaseCache {
 
@@ -29,7 +29,8 @@ if (module_exists('memcache')) {
     }
 
     function set($cid, $data, $expire = CACHE_PERMANENT, array $headers = NULL) {
-      parent::set(_ting_field_search_cache_get_cid($cid), $data, $expire, $headers);
+      parent::set(_ting_field_search_cache_get_cid($cid), $data, $expire,
+        $headers);
     }
 
   }

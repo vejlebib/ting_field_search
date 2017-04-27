@@ -1,0 +1,209 @@
+/**
+ * Mixins
+ *
+ * @author magnify
+ */
+/* Breakpoints
+   ========================================================================== */
+/* Media query
+   ========================================================================== */
+/* Breakpoints
+   ========================================================================== */
+/* Typography mixins
+ *
+ * These are mixins to allow for use in media queries
+   ========================================================================== */
+/* Availability
+   ========================================================================== */
+/* Pseudo arrow
+ *
+ * Usage example: pseudo-arrow(10px, #000, top, center, $offset: 20px)
+   ========================================================================== */
+/* Colors variables
+   ========================================================================== */
+/* Widgets
+   ========================================================================== */
+.pane-search-form .search-field-wrapper #search-block-form .form-item-search-block-form {
+  width: 67%;
+}
+.pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search {
+  width: 15%;
+  margin-left: 90px;
+  margin-top: 0;
+  z-index: 9;
+}
+.pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search label {
+  position: relative;
+  top: 45px;
+  margin-left: -80px;
+  font: normal normal normal 18px/1 "SourceSansProSemibold";
+}
+.pane-search-form .search-field-wrapper #search-block-form .form-actions {
+  top: 30px;
+}
+.pane-search-form .search-field-wrapper #search-block-form .form-actions a.fieldset-title {
+  margin-right: 300px;
+}
+.pane-search-form .search-field-wrapper #search-block-form .collapsible.collapse-processed {
+  top: -1px;
+}
+
+.select2-container {
+  width: 180px !important;
+}
+.select2-container .select2-search--dropdown {
+  padding: 0;
+}
+.select2-container .select2-search--dropdown .select2-search__field {
+  display: none;
+}
+.select2-container .select2-dropdown .select2-results {
+  border-radius: 15px;
+}
+.select2-container .select2-dropdown .select2-results__option {
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  padding: 0 6px;
+  color: #008abe;
+}
+.select2-container .selection .select2-selection--single {
+  height: 60px;
+  border-radius: 12px;
+  background: #f7f7f7;
+  border: 1px solid #d5d5d5;
+}
+.select2-container .selection .select2-selection--single .select2-selection__rendered {
+  margin-top: 15px;
+  margin-left: 5px;
+}
+.select2-container .selection .select2-selection--single .select2-selection__arrow {
+  top: 0;
+  height: 50px;
+  width: 30px;
+  right: 0;
+}
+.select2-container .selection .select2-selection--single .select2-selection__arrow b {
+  border: none;
+}
+.select2-container .selection .select2-selection--single .select2-selection__arrow b:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f0dc";
+  position: relative;
+  top: -5px;
+  left: 1px;
+}
+
+.page-search-ting .header-inner section.pane-search-form {
+  padding: 0;
+}
+.page-search-ting #search-block-form .form-item-ting-field-search {
+  width: 35%;
+  margin-left: 85px;
+  margin-top: 0;
+}
+.page-search-ting #search-block-form .form-item-ting-field-search label {
+  position: relative;
+  top: 45px;
+  margin-left: -80px;
+  font: normal normal normal 18px/1 "SourceSansProSemibold";
+  color: #4f4f4f;
+}
+.page-search-ting .select2-search--dropdown {
+  padding: 0;
+}
+.page-search-ting .select2-search--dropdown .select2-search__field {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .pane-search-form .search-field-wrapper #search-block-form .form-item-search-block-form {
+    width: 100%;
+  }
+  .pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search {
+    width: 100%;
+    margin-left: 0;
+  }
+  .pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search label {
+    top: 5px;
+    left: 80px;
+    font: normal normal normal 18px/1 "SourceSansProSemibold";
+  }
+  .pane-search-form .search-field-wrapper #search-block-form .form-actions {
+    top: 0;
+  }
+
+  .select2.select2-container {
+    width: 100% !important;
+  }
+  .select2.select2-container .select2-search--dropdown {
+    padding: 0;
+  }
+  .select2.select2-container .select2-search--dropdown .select2-search__field {
+    display: none;
+  }
+  .select2.select2-container .select2-dropdown .select2-results {
+    border-radius: 10px;
+  }
+  .select2.select2-container .select2-dropdown .select2-results__option {
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    padding: 0 6px;
+    color: #008abe;
+  }
+  .select2.select2-container .selection .select2-selection--single {
+    height: 50px;
+    border-radius: 10px;
+    background: #f7f7f7;
+    width: 100% !important;
+  }
+  .select2.select2-container .selection .select2-selection--single .select2-selection__rendered {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .select2.select2-container .selection .select2-selection--single .select2-selection__arrow {
+    float: right;
+  }
+  .select2.select2-container .selection .select2-selection--single .select2-selection__arrow b {
+    border: none;
+  }
+  .select2.select2-container .selection .select2-selection--single .select2-selection__arrow b:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f0dc";
+    position: relative;
+    top: -6px;
+    float: right;
+  }
+
+  .page-search-ting .header-inner section.pane-search-form {
+    padding: 0;
+  }
+  .page-search-ting .search-field-in-content .form-item-search-block-form {
+    width: 100%;
+  }
+  .page-search-ting #search-block-form .form-item-ting-field-search {
+    width: 100%;
+    margin-left: 0;
+  }
+  .page-search-ting #search-block-form .form-item-ting-field-search label {
+    top: 5px;
+    left: 80px;
+    font: normal normal normal 18px/1 "SourceSansProSemibold";
+    padding: 10px 0;
+    color: #4f4f4f;
+  }
+  .page-search-ting .search-field-in-content .form-actions {
+    top: 0;
+  }
+}

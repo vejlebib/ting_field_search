@@ -2,9 +2,8 @@ name = Ting field search
 description = Extends the search functionallity of Ting search
 package = Ding!
 core = 7.x
-
 dependencies[] = ting_search
-
 files[] = ting_field_search.cache.inc
-;files[] = cache/database.inc
-;files[] = cache/memcache.inc
+stylesheets[all][] = js/lib/dist/css/select2.min.css
+scripts[] = js/lib/dist/js/select2.min.js
+scripts[] = js/ting_field_search.js

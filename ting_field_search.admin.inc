@@ -2,26 +2,35 @@
 
 /**
  * @file
- *
  * Admin page callbacks for the Ting field search module.
  */
 
+/**
+ * Ting Field Search settings form.
+ */
 function ting_field_search_settings_form($form, &$form_state) {
   $form = array();
   // Show a message to the administrator if the module isn't installed
   // correctly. We provide a callback to correct this.
   if (!ting_field_search_get_status()) {
-    drupal_set_message(t('Ting field search is NOT installed correctly and will not work properly. Please go to <a href="@install">Installation</a> to correct this.', array(
-        '@install' => url('admin/config/ting-field-search/install', array(
-          'query' => drupal_get_destination()
-        )),
-      )
-    ), 'error');
+    drupal_set_message(
+      t('Ting field search is NOT installed correctly and will not work properly. Please go to <a href="@install">Installation</a> to correct this.',
+        array(
+          '@install' => url('admin/config/ting-field-search/install', array(
+            'query' => drupal_get_destination(),
+          )),
+        )
+      ),
+      'error'
+    );
   }
 
   return $form;
 }
 
+/**
+ * Confirmation form.
+ */
 function ting_field_search_install_confirm_form($form, &$form_state) {
   // Nothing to do here if installed correctly.
   if (ting_field_search_get_status()) {
@@ -34,7 +43,7 @@ function ting_field_search_install_confirm_form($form, &$form_state) {
     $backend = variable_get('cache_default_class', 'DrupalDatabaseCache');
   }
 
-  $message = '<p>' . t('Ting field search will <strong>NOT</strong> function correctly without the proper backend for cache_ting.') . '<//p>';
+  $message = '<p>' . t('Ting field search will <strong>NOT</strong> function correctly without the proper backend for cache_ting.') . '</p>';
   $message .= '<p>' . t('The current backend %backend will <strong>NOT</strong> work with Ting field search. Please press install below to correct this.', array('%backend' => $backend)) . '</p>';
 
   return confirm_form($form,
@@ -46,10 +55,11 @@ function ting_field_search_install_confirm_form($form, &$form_state) {
   );
 }
 
+/**
+ * Confirm form submit.
+ */
 function ting_field_search_install_confirm_form_submit($form, &$form_state) {
-  ting_field_search_install_backend();
-
-  // Verify
+  // Verify.
   if (ting_field_search_get_status()) {
     drupal_set_message(t('A compatible backend was installed and Ting field search is now functioning properly.'));
   }
