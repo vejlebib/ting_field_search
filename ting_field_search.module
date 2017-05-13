@@ -632,7 +632,7 @@ function ting_field_search_form_search_block_form_alter(&$form, &$form_state) {
 
   foreach (ting_field_search_profiles_sort($profiles) as $name => $profile) {
     // Only exposed profiles will be shown to the user.
-    if ($profile->config['user_interaction']['exposed'] && $profile->disabled == FALSE) {
+    if ($profile->config['user_interaction']['exposed']) {
       $exposed_profiles[$name] = t(
         'Search in @profile',
         array(
