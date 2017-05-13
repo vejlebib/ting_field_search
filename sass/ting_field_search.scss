@@ -66,12 +66,7 @@ $tablet: "(max-width: 1024px)";
       margin-right: 40%;
     }
 
-    @include medium() {
-      margin-right: 0;
-      top: 10px;
-    }
-
-    @include small() {
+    @include small-medium() {
       width: 100%;
       position: initial;
 
@@ -197,6 +192,7 @@ $tablet: "(max-width: 1024px)";
     .form-item-ting-field-search {
       width: 100%;
       margin-left: 0;
+      padding-top: 5px;
 
       label {
         top: 5px;
