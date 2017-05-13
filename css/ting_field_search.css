@@ -21,10 +21,20 @@
    ========================================================================== */
 /* Colors variables
    ========================================================================== */
-/* Widgets
+/* Width for tablet
    ========================================================================== */
 .pane-search-form .search-field-wrapper #search-block-form .form-item-search-block-form {
-  width: 67%;
+  width: 66%;
+}
+@media (max-width: 1024px) {
+  .pane-search-form .search-field-wrapper #search-block-form .form-item-search-block-form {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pane-search-form .search-field-wrapper #search-block-form .form-item-search-block-form {
+    width: 100%;
+  }
 }
 .pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search {
   width: 15%;
@@ -39,10 +49,31 @@
   font: normal normal normal 18px/1 "SourceSansProSemibold";
 }
 .pane-search-form .search-field-wrapper #search-block-form .form-actions {
-  top: 30px;
+  top: 29px;
+  position: absolute;
+  margin-right: 33%;
+}
+@media (max-width: 1024px) {
+  .pane-search-form .search-field-wrapper #search-block-form .form-actions {
+    margin-right: 40%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pane-search-form .search-field-wrapper #search-block-form .form-actions {
+    width: 100%;
+    position: initial;
+  }
+  .pane-search-form .search-field-wrapper #search-block-form .form-actions input[type="submit"] {
+    height: 43px;
+  }
 }
 .pane-search-form .search-field-wrapper #search-block-form .form-actions a.fieldset-title {
   margin-right: 300px;
+}
+@media only screen and (max-width: 480px) {
+  .pane-search-form .search-field-wrapper #search-block-form .search-block-little input.form-autocomplete {
+    height: 43px;
+  }
 }
 .pane-search-form .search-field-wrapper #search-block-form .collapsible.collapse-processed {
   top: -1px;
@@ -128,14 +159,12 @@
   .pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search {
     width: 100%;
     margin-left: 0;
+    padding-top: 5px;
   }
   .pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search label {
     top: 5px;
     left: 80px;
     font: normal normal normal 18px/1 "SourceSansProSemibold";
-  }
-  .pane-search-form .search-field-wrapper #search-block-form .form-actions {
-    top: 0;
   }
 
   .select2.select2-container {
@@ -206,4 +235,7 @@
   .page-search-ting .search-field-in-content .form-actions {
     top: 0;
   }
+}
+.page-search .header-inner .search-field-wrapper .form-item-ting-field-search {
+  display: none;
 }
