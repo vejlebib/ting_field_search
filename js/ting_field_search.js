@@ -1,21 +1,13 @@
 (function($) {
   'use strict';
 
-  function updateSelect() {
-    $('.form-type-select.form-item-ting-field-search select').select2();
-  }
+  Drupal.behaviors.ting_field_search = {
+    attach: function (context, settings) {
+      // Update select.
+      $('.form-type-select.form-item-ting-field-search select', context).select2();
 
-  function changeSelect() {
-    $('.page-search-ting .form-item-ting-field-search').insertAfter('.form-wrapper.collapse-processed'); 
-  }
-
-
-  $(document).ready(function() {
-    updateSelect();
-    changeSelect();
-
-    if ($('.form-item-ting-field-search').length && $('div#search-radios').length == 0) {
-      $("#search-block-form .form-actions.form-wrapper").insertBefore($(".form-item-ting-field-search"));
+      // Change select.
+      $('.page-search-ting .form-item-ting-field-search', context).insertAfter('.form-wrapper.collapse-processed');
     }
-  });
+  };
 })(jQuery);
