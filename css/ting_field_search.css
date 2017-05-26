@@ -23,8 +23,8 @@
    ========================================================================== */
 /* Width for tablet
    ========================================================================== */
-.header-wrapper .header-inner-field > section {
-  padding-bottom: 40px !important;
+.header-wrapper #header-inner-field > section {
+  padding-bottom: 40px;
 }
 
 #ting-search-terms-container {
