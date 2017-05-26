@@ -36,10 +36,10 @@ $tablet: "(max-width: 1024px)";
 
 #ting-search-terms-container {
   width: 76%;
+}
 
-  fieldset#ting-search-terms-fieldset .search-term-ops {
-    width: 76%;
-  }
+div.search-term-op-bar {
+  width: 76%;
 }
 
 .search-field-wrapper #search-radios {

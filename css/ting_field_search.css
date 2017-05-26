@@ -30,7 +30,8 @@
 #ting-search-terms-container {
   width: 76%;
 }
-#ting-search-terms-container fieldset#ting-search-terms-fieldset .search-term-ops {
+
+div.search-term-op-bar {
   width: 76%;
 }
 
