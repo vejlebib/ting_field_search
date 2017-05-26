@@ -23,24 +23,56 @@
    ========================================================================== */
 /* Width for tablet
    ========================================================================== */
+.header-wrapper .header-inner-field > section {
+  padding-bottom: 40px !important;
+}
+
+#ting-search-terms-container {
+  width: 76%;
+}
+#ting-search-terms-container fieldset#ting-search-terms-fieldset .search-term-ops {
+  width: 76%;
+}
+
+.search-field-wrapper #search-radios {
+  right: 750px;
+  margin-top: 75px;
+  width: 550px;
+  left: 0;
+}
+.search-field-wrapper #search-radios .form-type-radio {
+  display: inline;
+}
+.search-field-wrapper #search-radios .form-type-radio label a {
+  color: #fff;
+}
+
 .pane-search-form .search-field-wrapper #search-block-form .form-item-search-block-form {
-  width: 66%;
+  width: 76%;
 }
 @media (max-width: 1024px) {
   .pane-search-form .search-field-wrapper #search-block-form .form-item-search-block-form {
-    width: 60%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .pane-search-form .search-field-wrapper #search-block-form .form-item-search-block-form {
-    width: 100%;
+    width: 72%;
   }
 }
 .pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search {
   width: 15%;
-  margin-left: 90px;
   margin-top: 0;
   z-index: 9;
+  position: absolute;
+  right: 0;
+}
+@media (max-width: 1024px) {
+  .pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search {
+    right: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search {
+    width: 100%;
+    position: relative;
+    right: 0;
+  }
 }
 .pane-search-form .search-field-wrapper #search-block-form .form-item-ting-field-search label {
   position: relative;
@@ -51,11 +83,11 @@
 .pane-search-form .search-field-wrapper #search-block-form .form-actions {
   top: 29px;
   position: absolute;
-  margin-right: 33%;
+  margin-right: 24%;
 }
 @media (max-width: 1024px) {
   .pane-search-form .search-field-wrapper #search-block-form .form-actions {
-    margin-right: 40%;
+    margin-right: 28%;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -66,9 +98,6 @@
   .pane-search-form .search-field-wrapper #search-block-form .form-actions input[type="submit"] {
     height: 43px;
   }
-}
-.pane-search-form .search-field-wrapper #search-block-form .form-actions a.fieldset-title {
-  margin-right: 300px;
 }
 @media only screen and (max-width: 480px) {
   .pane-search-form .search-field-wrapper #search-block-form .search-block-little input.form-autocomplete {
