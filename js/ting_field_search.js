@@ -10,7 +10,7 @@
       $('.page-search-ting .form-item-ting-field-search', context).insertAfter('.form-wrapper.collapse-processed');
 
       if ($('#search-radios').length) {
-        $(".header-inner").addClass("header-inner-field");
+        $('.header-inner').attr('id', 'header-inner-field');
       }
     }
   };

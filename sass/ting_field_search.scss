@@ -30,8 +30,8 @@ $zen-gutters:             20px;
 
 $tablet: "(max-width: 1024px)";
 
-.header-wrapper .header-inner-field>section {
-  padding-bottom: 40px !important;
+.header-wrapper #header-inner-field > section {
+  padding-bottom: 40px;
 }
 
 #ting-search-terms-container {
