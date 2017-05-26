@@ -32,7 +32,7 @@ function ting_field_search_form_ding_facetbrowser_form_alter(&$form, &$form_stat
 
     // Build a base URI for all the facet terms including any existing facet
     // parameters added manually. We would like to use 'facets[]' as key for
-    // all the facets, but Drupal functions output 'facets[0], facets[1], ..'
+    // all the facets, but Drupal functions output 'facets[0], facets[1], ..'.
     global $base_url;
     $base_term_uri = $base_url . '/' . request_path();
     $facet_parameters = array();
@@ -66,7 +66,7 @@ function ting_field_search_form_ding_facetbrowser_form_alter(&$form, &$form_stat
 
       // No need to do anything if the profile facet wasn't returned.
       if ($facet && count($facet->terms)) {
-        // Get the element name - i.e. the part of the facet name after the '.'
+        // Get the element name - i.e. the part of the facet name after the '.'.
         $element_name = explode('.', $name);
         $element_name = end($element_name);
         $facet_class = ($count > $facet_count) ? 'js-hidden' : 'js-visible';
@@ -150,21 +150,21 @@ function ting_field_search_form_ding_facetbrowser_form_alter(&$form, &$form_stat
 }
 
 /**
- * Helper function to format term name title, if it's too long to display in
- * the facetbrowser window.
+ * Helper function to format term name title, if it's too long to display in the facetbrowser window.
  *
  * Note: This code is copied from the form builder in Ding facetbrowser, and it
  * tries to estimate the length of the string while accounting for 'short'
  * letters such as 'l' and 'i'. It seems to do an OK job, and we use it here to
  * be consistent with the default look. Otherwise, a solution with CSS would
  * probably be preferred.
- * See: ding_facetbrowser_form()
+ *
+ * @see ding_facetbrowser_form()
  */
 function _ting_field_search_format_term_name($term_name, $term_count) {
   $substr_length = 22
     + substr_count(drupal_substr($term_name, 0, 20), 'l')
     + substr_count(drupal_substr($term_name, 0, 20), 'i')
-    - drupal_strlen((string)$term_count);
+    - drupal_strlen((string) $term_count);
   if (drupal_strlen($term_name) > $substr_length) {
     return drupal_substr($term_name, 0, $substr_length) . '...';
   }
@@ -173,23 +173,28 @@ function _ting_field_search_format_term_name($term_name, $term_count) {
 
 /**
  * Helper function to sort facet terms based on profile sorting setting.
+ *
  * Code copied from Ding facetbrowser module.
  */
 function _ting_field_search_sort_terms(&$terms, $sorting) {
   switch ($sorting) {
-    case 'default':
-      // Uses the default ranking sorting from the well.
-      break;
     case 'alphabetical':
       ksort($terms);
       break;
+
     case 'alphabetical_reverse':
       krsort($terms);
       break;
+
     case 'numeric':
       ksort($terms, SORT_NUMERIC);
       break;
+
     case 'numeric_reverse':
       krsort($terms, SORT_NUMERIC);
+      break;
+
+    default:
+      break;
   }
 }
