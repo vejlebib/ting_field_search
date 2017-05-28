@@ -1,0 +1,323 @@
+@import "_mixins";
+@import "susy";
+@import "zen-grids";
+
+/* Colors variables
+   ========================================================================== */
+
+$white:                   #fff;
+$dark-gray:               #ccc;
+$darker-gray:             #333;
+$light-gray:              #dadada;
+$lighter-gray:            #e5e5e5;
+$gray:                    #ccc;
+$black:                   #000;
+$gray-transparent-bg:     rgba( 0, 0, 0, 0.7);
+$red:                     #e10d3f;
+$orange:                  #ea6621;
+$green_light:             #b9c650;
+$blue:                    #008abe;
+$purple:                  #a34da4;
+$marine:                  #47cfd1;
+$yellow:                  #eae328;
+$green:                   #78a854;
+
+$zen-columns:             12;
+$zen-gutters:             20px;
+
+/* Width for tablet
+   ========================================================================== */
+
+$tablet: "(max-width: 1024px)";
+
+.header-wrapper #header-inner-field > section {
+  padding-bottom: 40px;
+}
+
+#search-block-form {
+  fieldset#ting-search-terms-fieldset {
+    display: inline-block;
+  }
+}
+
+.search-field-wrapper #search-radios {
+  right: 750px;
+  margin-top: 75px;
+  width: 550px;
+  left: 0;
+
+  .form-type-radio{
+    display: inline;
+
+    label a {
+    color: $white;
+    }
+  }
+}
+
+.pane-search-form .search-field-wrapper #search-block-form {
+  .form-item-search-block-form {
+    width: 76%;
+
+    @media #{$tablet} {
+      width: 72%;
+    }
+  }
+
+  .form-item-ting-field-search {
+    width: 15%;
+    margin-top: 0;
+    z-index: 9;
+    position: absolute;
+    right: 0;
+
+     @media #{$tablet} {
+      right: 30px;
+
+    }
+
+    @include small-medium() {
+     width: 100%;
+     position: relative;
+     right: 0;
+    }
+
+    label {
+      position: relative;
+      top: 45px;
+      margin-left: -80px;
+      font: normal normal normal 18px/1 "SourceSansProSemibold";
+    }
+  }
+
+  .form-actions {
+    top: 29px;
+    position: absolute;
+    margin-right: 24%;
+
+    @media #{$tablet} {
+      margin-right: 28%;
+    }
+
+    @include small-medium() {
+      width: 100%;
+      position: initial;
+
+      input[type="submit"] {
+        height: 43px;
+      }
+    }
+  }
+
+  .search-block-little {
+    @include small() {
+      input.form-autocomplete {
+        height: 43px;
+      }
+    }
+  }
+
+  .collapsible.collapse-processed {
+    top: -1px;
+  }
+}
+
+.select2-container {
+  width: 180px !important;
+
+  .select2-search--dropdown {
+    padding: 0;
+
+    .select2-search__field {
+      display: none;
+    }
+  }
+
+  .select2-dropdown {
+    .select2-results {
+      border-radius: 15px;
+    }
+
+    .select2-results__option {
+      height: 50px;
+      line-height: 50px;
+      font-weight: bold;
+      padding: 0 6px;
+      color: $blue;
+    }
+  }
+
+  .selection .select2-selection--single {
+    height: 60px;
+    border-radius: 12px;
+    background: #f7f7f7;
+    border: 1px solid #d5d5d5;
+
+    .select2-selection__rendered {
+      margin-top: 15px;
+      margin-left: 5px;
+    }
+
+    .select2-selection__arrow {
+      top: 0;
+      height: 50px;
+      width: 30px;
+      right: 0;
+
+      b {
+        border:none;
+
+        &:before {
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+          content: "\f0dc";
+          position: relative;
+          top: -5px;
+          left: 1px;
+        }
+      }
+    }
+  }
+}
+
+.page-search-ting {
+  .header-inner section.pane-search-form {
+    padding: 0;
+  }
+
+  #search-block-form .form-item-ting-field-search {
+    width: 35%;
+    margin-left: 85px;
+    margin-top: 0;
+
+    label {
+      position: relative;
+      top: 45px;
+      margin-left: -80px;
+      font: normal normal normal 18px/1 "SourceSansProSemibold";
+      color: #4f4f4f;
+    }
+  }
+
+  .select2-search--dropdown {
+    padding:0;
+
+    .select2-search__field {
+      display: none;
+    }
+  }
+}
+
+@include small-medium() {
+  .pane-search-form .search-field-wrapper #search-block-form {
+    .form-item-search-block-form {
+      width: 100%;
+    }
+
+    .form-item-ting-field-search {
+      width: 100%;
+      margin-left: 0;
+      padding-top: 5px;
+
+      label {
+        top: 5px;
+        left: 80px;
+        font: normal normal normal 18px/1 "SourceSansProSemibold";
+      }
+    }
+  }
+
+  .select2.select2-container {
+    width: 100% !important;
+
+    .select2-search--dropdown {
+      padding:0;
+
+      .select2-search__field {
+        display: none;
+      }
+    }
+
+    .select2-dropdown {
+      .select2-results {
+        border-radius: 10px;
+      }
+
+      .select2-results__option {
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        padding: 0 6px;
+        color: $blue;
+      }
+    }
+
+    .selection .select2-selection--single {
+      height: 50px;
+      border-radius: 10px;
+      background: #f7f7f7;
+      width: 100% !important;
+
+      .select2-selection__rendered {
+        margin-top: 10px;
+        margin-left: 15px;
+      }
+
+      .select2-selection__arrow {
+        float: right;
+
+        b {
+          border:none;
+
+          &:before {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: "\f0dc";
+            position: relative;
+            top: -6px;
+            float: right
+          }
+        }
+      }
+    }
+  }
+
+  .page-search-ting {
+    .header-inner section.pane-search-form {
+      padding: 0;
+    }
+
+    .search-field-in-content .form-item-search-block-form {
+      width: 100%;
+    }
+
+    #search-block-form .form-item-ting-field-search {
+      width: 100%;
+      margin-left: 0;
+
+      label {
+        top: 5px;
+        left: 80px;
+        font: normal normal normal 18px/1 "SourceSansProSemibold";
+        padding: 10px 0;
+        color: #4f4f4f;
+      }
+    }
+
+    .search-field-in-content .form-actions {
+      top: 0;
+    }
+  }
+}
+
+.page-search .header-inner .search-field-wrapper .form-item-ting-field-search {
+  display: none;
+}
