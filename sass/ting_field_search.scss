@@ -34,12 +34,10 @@ $tablet: "(max-width: 1024px)";
   padding-bottom: 40px;
 }
 
-#ting-search-terms-container {
-  width: 76%;
-}
-
-div.search-term-op-bar {
-  width: 76%;
+#search-block-form {
+  fieldset#ting-search-terms-fieldset {
+    display: inline-block;
+  }
 }
 
 .search-field-wrapper #search-radios {
