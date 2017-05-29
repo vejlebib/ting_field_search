@@ -26,6 +26,19 @@
 .header-wrapper #header-inner-field > section {
   padding-bottom: 40px;
 }
+@media only screen and (max-width: 768px) {
+  .header-wrapper #header-inner-field > section {
+    padding-bottom: 10px;
+  }
+  .header-wrapper #header-inner-field > section .search-field-wrapper #search-radios {
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header-wrapper #header-inner-field > section #search-radios .form-item.form-item-searches {
+    width: 100%;
+  }
+}
 
 #search-block-form fieldset#ting-search-terms-fieldset {
   display: inline-block;
@@ -39,6 +52,7 @@
 }
 .search-field-wrapper #search-radios .form-type-radio {
   display: inline;
+  margin-right: 20px;
 }
 .search-field-wrapper #search-radios .form-type-radio label a {
   color: #fff;
