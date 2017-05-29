@@ -32,6 +32,22 @@ $tablet: "(max-width: 1024px)";
 
 .header-wrapper #header-inner-field > section {
   padding-bottom: 40px;
+
+  @include small-medium() {
+    padding-bottom: 10px;
+
+    .search-field-wrapper #search-radios{
+      margin-top: 10px;
+    }
+  }
+
+  @include small() {
+    #search-radios {
+      .form-item.form-item-searches {
+        width: 100%;
+      }
+    }
+  }
 }
 
 #search-block-form {
@@ -48,6 +64,7 @@ $tablet: "(max-width: 1024px)";
 
   .form-type-radio{
     display: inline;
+    margin-right: 20px;
 
     label a {
     color: $white;
