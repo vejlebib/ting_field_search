@@ -30,24 +30,74 @@ $zen-gutters:             20px;
 
 $tablet: "(max-width: 1024px)";
 
+.header-wrapper #header-inner-field > section {
+  padding-bottom: 40px;
+
+  @include small-medium() {
+    padding-bottom: 10px;
+
+    .search-field-wrapper #search-radios{
+      margin-top: 10px;
+    }
+  }
+
+  @include small() {
+    #search-radios {
+      .form-item.form-item-searches {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#search-block-form {
+  fieldset#ting-search-terms-fieldset {
+    display: inline-block;
+  }
+}
+
+.search-field-wrapper #search-radios {
+  right: 750px;
+  margin-top: 75px;
+  width: 550px;
+  left: 0;
+
+  .form-type-radio{
+    display: inline;
+    margin-right: 20px;
+
+    label a {
+    color: $white;
+    }
+  }
+}
+
 .pane-search-form .search-field-wrapper #search-block-form {
   .form-item-search-block-form {
-    width: 66%;
+    width: 76%;
 
     @media #{$tablet} {
-      width: 60%;
-    }
-
-    @include small-medium() {
-     width: 100%;
+      width: 72%;
     }
   }
 
   .form-item-ting-field-search {
     width: 15%;
-    margin-left: 90px;
     margin-top: 0;
     z-index: 9;
+    position: absolute;
+    right: 0;
+
+     @media #{$tablet} {
+      right: 30px;
+
+    }
+
+    @include small-medium() {
+     width: 100%;
+     position: relative;
+     right: 0;
+    }
 
     label {
       position: relative;
@@ -60,10 +110,10 @@ $tablet: "(max-width: 1024px)";
   .form-actions {
     top: 29px;
     position: absolute;
-    margin-right: 33%;
+    margin-right: 24%;
 
     @media #{$tablet} {
-      margin-right: 40%;
+      margin-right: 28%;
     }
 
     @include small-medium() {
@@ -73,10 +123,6 @@ $tablet: "(max-width: 1024px)";
       input[type="submit"] {
         height: 43px;
       }
-    }
-
-    a.fieldset-title {
-      margin-right: 300px;
     }
   }
 
