@@ -58,6 +58,16 @@
     margin-top: 10px;
   }
 }
+.header-wrapper #header-inner-field > section #search-radios.search-radios-basic {
+  top: initial;
+  left: initial;
+}
+.header-wrapper #header-inner-field > section #search-radios.search-radios-basic .form-radios .form-item label {
+  display: inline;
+}
+.header-wrapper #header-inner-field > section #search-radios.search-radios-basic .form-radios .form-item {
+  display: inline;
+}
 @media only screen and (max-width: 480px) {
   .header-wrapper #header-inner-field > section #search-radios .form-item.form-item-searches {
     width: 100%;
@@ -70,7 +80,14 @@
 
 .search-field-wrapper #search-radios {
   width: 550px;
+  left: initial;
+  bottom: initial;
+  position: absolute;
+  padding-top: 10px;
   left: 0;
+}
+.search-field-wrapper #search-radios .form-radios .form-item label {
+  display: inline;
 }
 .search-field-wrapper #search-radios .form-type-radio {
   display: inline;
