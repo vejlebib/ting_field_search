@@ -1,10 +1,10 @@
 name = Ting field search
 description = Extends the search functionallity of Ting search
-package = Ding!
+package = easyOPAC
 core = 7.x
-
+version = 3.0.4
 dependencies[] = ting_search
-
 files[] = ting_field_search.cache.inc
-;files[] = cache/database.inc
-;files[] = cache/memcache.inc
+stylesheets[all][] = js/lib/dist/css/select2.min.css
+scripts[] = js/lib/dist/js/select2.min.js
+scripts[] = js/ting_field_search.js
