@@ -65,6 +65,19 @@ $tablet: "(max-width: 1024px)";
     }
   }
 
+  & #search-radios.search-radios-basic  {
+    top: initial;
+    left: initial;
+
+    .form-radios .form-item label {
+      display: inline;
+    }
+
+    .form-radios .form-item  {
+      display: inline;
+    }
+  }
+
   @include small() {
     #search-radios {
       .form-item.form-item-searches {
@@ -82,8 +95,15 @@ $tablet: "(max-width: 1024px)";
 
 .search-field-wrapper #search-radios {
   width: 550px;
+  left: initial;
+    bottom: initial;
+    position: absolute;
+    padding-top: 10px;
   left: 0;
 
+.form-radios .form-item label {
+  display: inline;
+}
   .form-type-radio{
     display: inline;
     margin-right: 20px;
