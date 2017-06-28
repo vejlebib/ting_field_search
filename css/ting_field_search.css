@@ -26,6 +26,30 @@
 .header-wrapper #header-inner-field > section {
   padding-bottom: 40px;
 }
+.header-wrapper #header-inner-field > section.wayf-wrapper {
+  bottom: -70px;
+}
+@media only screen and (max-width: 480px) {
+  .header-wrapper #header-inner-field > section.wayf-wrapper {
+    bottom: 10px;
+    left: 0;
+    width: auto;
+    right: 0;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .header-wrapper #header-inner-field > section.wayf-wrapper {
+    bottom: -40px;
+    width: auto;
+    right: 0;
+  }
+  .header-wrapper #header-inner-field > section.wayf-wrapper .pane-ding-gatewayf-registration-registration,
+  .header-wrapper #header-inner-field > section.wayf-wrapper .pane-ding-gatewayf-login {
+    width: auto;
+    right: 0;
+    left: 0;
+  }
+}
 @media only screen and (max-width: 768px) {
   .header-wrapper #header-inner-field > section {
     padding-bottom: 10px;
@@ -45,8 +69,6 @@
 }
 
 .search-field-wrapper #search-radios {
-  right: 750px;
-  margin-top: 75px;
   width: 550px;
   left: 0;
 }
